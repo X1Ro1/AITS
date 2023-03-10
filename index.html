@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хакатон</title>
+
+    <script scr="https://kit.fontawesome.com/b8991598b2.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Golos+Text:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header-inner">
+            <div class="menu">
+                <form action="index.html">
+                    <input type="image" src="img/logo.svg">
+                </form>
+                <div class="search-box">
+                    <input class="search-txt" type="text" name="" placeholder="Введите запрос...">
+                </div>
+                <div class="navigation"><a href="">Рейтинг</a></div>
+                <div class="navigation"><a href="">Мероприятия</a></div>
+                <div class="nav-grid">
+                    <div class="navigatiom-img">
+                        <img src="img/avatar_blue.svg" alt="" width="50px">
+                    </div>
+                    <div class="navigation-txt">
+                        <div class="navigation-txt-name">
+                            <a href="profil.html">Шилов Иван</a>
+                        </div>
+                        <div>Дизайнер</div>
+                        <div class="navigation-exit">
+                            <a href="login.html">Выйти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-container">
+            <div class="banner">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/s0D7ujyV03Y" title="Хакатон 2022. Как это было" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class=""></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/xF9Kvl2b3K8" title="Хакатон InDev2019 стартовал в Якутске" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe src="https://www.youtube.com/embed/EJaWqY7QRBo" title="Хакатон indev2019 - Полная версия" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="txt-proj">
+                <h1>Проекты пользователей:</h1>
+            </div>
+            <div class="button">
+                <div class="button-container">
+                    <a href="">Новинки</a>
+                    <a href="">Случайное</a>
+                    <a href="">От учащихся</a>
+                    <a href="">Работы</a>
+                    <a href="">Лучшие работы</a>
+                </div>
+            </div>
+            <br>
+            <div class="top">
+                <div class="top-container">
+                    <div class="block">
+                        <img src="img/amogus.png" alt="">
+                        <h1 class="top-h1">Tria</h1>
+                        <div class="top-txt">Иван Шилов</div>
+                    </div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+        
+    <div class="content-wave">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </div>
+
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewhell: true,
+            keyboard: true,
+        });
+
+        let leftArrow = document.querySelector('.swiper-button-prev');
+        leftArrow.style.height = '75%';
+        leftArrow.style.bottom = 'auto';
+        leftArrow.style.top = '0';
+        leftArrow.style.left = '8%';
+
+        let rightArrow = document.querySelector('.swiper-button-next');
+        rightArrow.style.height = '75%';
+        rightArrow.style.bottom = 'auto';
+        rightArrow.style.top = '0';
+        rightArrow.style.left = '90%';
+
+    </script>
+    
+</body>
+</html>
