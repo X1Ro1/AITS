@@ -26,7 +26,7 @@ body {
     justify-content: space-between;
     gap: 12px;
     width: 100%; 
-    margin-top: 1%;
+    margin-top: 2.5%;
     margin-bottom: 2%;
 }
 
@@ -48,7 +48,6 @@ body {
     color: white;
     transition: 0.7s;
     box-shadow: 0px 5px 20px rgba(108, 92, 255, 0.415);
-
 }
 
 .nav-grid {
@@ -204,12 +203,17 @@ body {
 }
 
 .top-h1 {
-    font-size: 16px;
+    font-size: 17px;
 }
 
-.top-txt {
-    font-size: 13px;
+.top-txt a{
+    text-decoration: none;
+    font-size: 14px;
     color: #808080;
+}
+
+.top-txt a:hover {
+    color: #00A3FF;
 }
 
 
@@ -247,7 +251,7 @@ body {
     max-width: 415px;
     width: 100%;
     background: radial-gradient(97.69% 94.8% at 2.31% 3.73%, rgba(0, 225, 255, 0.65) 0%, rgba(0, 92, 235, 0.65) 100%);
-    border-radius: 30px;
+    border-radius: 50px;
     padding: 50px;
 }
 
@@ -330,7 +334,7 @@ body {
     background-size: cover;
 }
 
-.auth_input::placeholder { /* Most modern browsers support this now. */
+.auth_input::placeholder { 
     color:    rgb(255, 255, 255);
  }
 
@@ -395,7 +399,7 @@ body {
 /* Профиль */
 .profil {
     display: grid;
-    grid-template-columns: 0.25fr 1.75fr;
+    grid-template-columns: 0.33fr 0.67fr 2fr;
     margin-left: 5%;
 }
 
@@ -424,6 +428,34 @@ body {
 .profil_statistik img{
     width: 1200px;
 }
+
+
+.profil_txt a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(90, 90, 90, 0.1);
+    border-radius: 40px;
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 140px;
+}
+
+.profil_txt a:hover {
+    background: #df5d29;
+    color: white;
+    transition: 0.7s;
+    box-shadow: 0px 5px 20px rgba(108, 92, 255, 0.415);
+}
+
+
+
+
+
+
 
 
 
@@ -496,7 +528,7 @@ body {
 
 .rating_user_block {
     display: grid;
-    grid-template-columns: 0.21fr 1.79fr;
+    grid-template-columns: 0.6fr 2.4fr 1fr 0.26fr 0.74fr;
     width: 798px;
     height: 115px;
     background: #FFFFFF;
@@ -513,4 +545,103 @@ body {
     line-height: 60px;
     font-size: 20px;
     font-weight: bold;
+}
+
+.rating_user_block_rate {
+    line-height: 68px;
+}
+
+
+
+
+
+
+
+/* Работы */
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.work-container {
+    max-width: 800px;
+    width: 100%;
+}
+
+.work-container img{
+    width: 800px;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+}
+
+.work-grid-txt {
+    display: grid;
+    grid-template-rows: 30px 30px;
+    line-height: 40px;
+}
+
+.work-grid-txt-role {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.work-grid-txt-name {
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.work-grid-img img {
+    width: 80px;
+}
+
+.work-grid-txt-role-follower {
+    color: #929292;
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.work-setka {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 120px;
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+/* Мероприятия */
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.events-container {
+    max-width: 800px;
+    width: 100%;
+}
+.events-container h1{
+    color: #005CEB;
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.events-container img {
+    width: 800px;
 }
