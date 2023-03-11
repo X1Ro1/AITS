@@ -26,8 +26,8 @@ body {
     justify-content: space-between;
     gap: 12px;
     width: 100%; 
-    margin-top: 4%;
-    margin-bottom: 4%;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 .navigation a{
@@ -44,9 +44,9 @@ body {
 }
 
 .navigation a:hover {
-    background: #639ee6;
+    background: #00A3FF;
     color: white;
-    transition: 1s;
+    transition: 0.7s;
     box-shadow: 0px 5px 20px rgba(108, 92, 255, 0.415);
 
 }
@@ -66,8 +66,8 @@ body {
 }
 
 .navigation-txt-name a:hover {
-    color: #639ee6;
-    transition: 0.6s;
+    color: #00A3FF;
+    transition: 0.7s;
 }
 .navigation-txt {
     position: relative;
@@ -166,7 +166,7 @@ body {
     height: 225px;
     background: radial-gradient(145.29% 136.5% at 3.03% -7.23%, #3BFFFF 0%, #8DC1FF 81.79%);
     border-radius: 50px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .button-container {
@@ -191,8 +191,8 @@ body {
 
 .button-container a:hover {
     transform: scale(1.05);
-    transition: 1s;
-    background: #639ee6;
+    transition: 0.8s;
+    background: #00A3FF;
     color: white;
 }
 
@@ -408,9 +408,109 @@ body {
     align-items: center;
     justify-content: center;
 }
-.shapka-container {
-    background: radial-gradient(145.29% 136.5% at 3.03% -7.23%, #3BFFFF 0%, #8DC1FF 81.79%);
-    width: 1290px;
-    height: 286px;
-    border-radius: 20px;
+
+.profil_statistik{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profil_statistik_container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.profil_statistik img{
+    width: 1200px;
+}
+
+
+
+/* Рейтинг */
+
+.rating-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-container {
+    max-width: 900px;
+    width: 100%;
+}
+
+.rating-container h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #005CEB;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+
+.rating-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(90, 90, 90, 0.1);
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 17px;
+}
+
+.rating-btn a:hover{
+    background: #00A3FF;
+    color: white;
+    transition: 0.7s;
+    box-shadow: 0px 5px 20px rgba(108, 92, 255, 0.415);
+}
+
+.rating_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 140px;
+}
+
+.rating_user_block {
+    display: grid;
+    grid-template-columns: 0.21fr 1.79fr;
+    width: 798px;
+    height: 115px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(90, 90, 90, 0.1);
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.rating_user_block_img img{
+    width: 60px;
+}
+
+.rating_user_block_name {
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: bold;
 }
